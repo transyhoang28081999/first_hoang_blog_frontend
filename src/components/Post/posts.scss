@@ -1,0 +1,22 @@
+@import '../scss/variable';
+@import '../scss/popular';
+
+// Posts
+.divPostsContainer{
+    @extend .ModelContainer;
+    &Banner{
+        @extend .ModelBanner;
+    }
+    &ButtonCreate{
+        margin-bottom: 50px;
+        a{
+            @extend .ModelButton;
+            background-color: $color-blue;
+            color: $color-white;
+        }
+    }
+}
+.h1Posts{
+    color: $color-black;
+    font-size: $font-30px;
+}

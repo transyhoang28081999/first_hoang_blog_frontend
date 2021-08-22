@@ -1,0 +1,33 @@
+@import '../scss/variable';
+footer{
+    clear: both;
+    width: 100%;
+    background-color: $color-black;
+}
+.divFooterContainer{
+    width: $width-container;
+    margin: $margin-auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    &In{
+        width: 33%;
+        float: left;
+        text-align: center;
+        h3{
+            color: $color-white;
+        }
+        li{
+            padding-top: 10px;
+            a{
+                color: $color-white;
+                text-decoration: none;
+            }
+        }
+    }
+    &Out{
+        clear: left;
+        color: $color-white;
+        padding-top: 30px;
+        text-align: center;
+    }
+}

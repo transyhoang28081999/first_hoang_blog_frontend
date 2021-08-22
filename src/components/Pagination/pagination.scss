@@ -1,0 +1,19 @@
+@import '../scss/variable';
+@import '../scss/popular';
+
+.pagination{
+    margin-bottom: 30px;
+    button{
+        @extend .ModelButton;
+        color: $color-white;
+        background-color: orange;
+        border: none;
+        margin-left: 40px;
+        &.unactive{
+            background-color: gray;
+            &:hover{
+                background-color: gray;
+            }
+        }
+    }
+}

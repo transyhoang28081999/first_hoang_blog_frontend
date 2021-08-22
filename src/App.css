@@ -1,38 +1,391 @@
-.App {
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.divHeaderContainer {
+  width: 1140px;
+  margin: 0px auto;
+}
+.divHeaderContainerLeft {
+  line-height: 80px;
+  color: white;
+  width: 50%;
+  float: left;
+}
+.divHeaderContainerLeft h1 {
+  font-size: 40px;
+}
+.divHeaderContainerRight {
+  float: right;
+  line-height: 80px;
+}
+.divHeaderContainerRight a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.ModelContainer, .divEditContainer, .divCreateContainer, .divShowContainer, .divPostsContainer {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+.ModelBanner, .divEditContainerBanner, .divCreateContainerBanner, .divShowContainerBanner, .divPostsContainerBanner {
+  margin-top: 30px;
+  margin-bottom: 60px;
   text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ModelButton, .divEditContainer button, .divCreateContainer button, .divShowContainerButton a, .pagination button, .divPostLinkADelete button, .divPostLinkA a, .divPostsContainerButtonCreate a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.ModelButton:hover, .divEditContainer button:hover, .divCreateContainer button:hover, .divShowContainerButton a:hover, .pagination button:hover, .divPostLinkADelete button:hover, .divPostLinkA a:hover, .divPostsContainerButtonCreate a:hover {
+  background-color: black;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Messages, .messagesCreate {
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.divPostsContainerButtonCreate {
+  margin-bottom: 50px;
+}
+.divPostsContainerButtonCreate a {
+  background-color: blue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.h1Posts {
+  color: black;
+  font-size: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ModelContainer, .divEditContainer, .divCreateContainer, .divShowContainer, .divPostsContainer {
+  width: 1140px;
+  margin: 0px auto;
 }
+
+.ModelBanner, .divEditContainerBanner, .divCreateContainerBanner, .divShowContainerBanner, .divPostsContainerBanner {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+}
+
+.ModelButton, .divEditContainer button, .divCreateContainer button, .divShowContainerButton a, .pagination button, .divPostLinkADelete button, .divPostLinkA a, .divPostsContainerButtonCreate a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.ModelButton:hover, .divEditContainer button:hover, .divCreateContainer button:hover, .divShowContainerButton a:hover, .pagination button:hover, .divPostLinkADelete button:hover, .divPostLinkA a:hover, .divPostsContainerButtonCreate a:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.Messages, .messagesCreate {
+  color: red;
+}
+
+.divPost {
+  margin-bottom: 100px;
+  clear: both;
+}
+
+.divPostImage {
+  width: 400px;
+  height: 200px;
+  float: left;
+}
+
+.divPostText {
+  width: 1000px;
+  height: 150px;
+}
+.divPostTextSpan {
+  color: gray;
+  font-weight: 500;
+}
+.divPostTextSpanIn {
+  color: black;
+  font-weight: bold;
+}
+
+.divPostLinkA a {
+  margin-right: 50px;
+  float: left;
+}
+
+.divPostLinkARead a {
+  background-color: blue;
+  color: white;
+}
+
+.divPostLinkAEdit a {
+  background-color: yellow;
+  color: blue;
+}
+
+.divPostLinkADelete button {
+  margin-right: 50px;
+  float: left;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.ModelContainer, .divEditContainer, .divCreateContainer, .divShowContainer, .divPostsContainer {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+.ModelBanner, .divEditContainerBanner, .divCreateContainerBanner, .divShowContainerBanner, .divPostsContainerBanner {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+}
+
+.ModelButton, .divEditContainer button, .divCreateContainer button, .divShowContainerButton a, .pagination button, .divPostsContainerButtonCreate a, .divPostLinkA a, .divPostLinkADelete button {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.ModelButton:hover, .divEditContainer button:hover, .divCreateContainer button:hover, .divShowContainerButton a:hover, .pagination button:hover, .divPostsContainerButtonCreate a:hover, .divPostLinkA a:hover, .divPostLinkADelete button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.Messages, .messagesCreate {
+  color: red;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+.pagination button {
+  color: white;
+  background-color: orange;
+  border: none;
+  margin-left: 40px;
+}
+.pagination button.unactive {
+  background-color: gray;
+}
+.pagination button.unactive:hover {
+  background-color: gray;
+}
+
+.ModelContainer, .divEditContainer, .divCreateContainer, .divShowContainer, .divPostsContainer {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+.ModelBanner, .divEditContainerBanner, .divCreateContainerBanner, .divShowContainerBanner, .divPostsContainerBanner {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+}
+
+.ModelButton, .divEditContainer button, .divCreateContainer button, .divShowContainerButton a, .divPostsContainerButtonCreate a, .divPostLinkA a, .divPostLinkADelete button, .pagination button {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.ModelButton:hover, .divEditContainer button:hover, .divCreateContainer button:hover, .divShowContainerButton a:hover, .divPostsContainerButtonCreate a:hover, .divPostLinkA a:hover, .divPostLinkADelete button:hover, .pagination button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.Messages, .messagesCreate {
+  color: red;
+}
+
+.divShowContainerButton {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.divShowContainerButton a {
+  color: white;
+  background-color: blue;
+  float: right;
+}
+
+.ModelContainer, .divEditContainer, .divCreateContainer, .divPostsContainer, .divShowContainer {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+.ModelBanner, .divEditContainerBanner, .divCreateContainerBanner, .divPostsContainerBanner, .divShowContainerBanner {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+}
+
+.ModelButton, .divEditContainer button, .divCreateContainer button, .divPostsContainerButtonCreate a, .divPostLinkA a, .divPostLinkADelete button, .pagination button, .divShowContainerButton a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.ModelButton:hover, .divEditContainer button:hover, .divCreateContainer button:hover, .divPostsContainerButtonCreate a:hover, .divPostLinkA a:hover, .divPostLinkADelete button:hover, .pagination button:hover, .divShowContainerButton a:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.Messages, .messagesCreate {
+  color: red;
+}
+
+.divCreateContainerForm {
+  width: 100%;
+}
+.divCreateContainerForm input {
+  border: none;
+}
+.divCreateContainerForm input.title {
+  width: 100%;
+  font-size: 30px;
+  border-bottom: 2px solid gray;
+}
+.divCreateContainerForm input.number {
+  width: 100%;
+  height: 30px;
+}
+.divCreateContainerForm textarea {
+  border: none;
+}
+.divCreateContainerForm textarea.description {
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 2px solid gray;
+  height: 200px;
+}
+.divCreateContainer button {
+  background-color: blue;
+  color: white;
+  border: none;
+  margin: 20px 0px;
+}
+
+.ModelContainer, .divEditContainer, .divPostsContainer, .divShowContainer, .divCreateContainer {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+.ModelBanner, .divEditContainerBanner, .divPostsContainerBanner, .divShowContainerBanner, .divCreateContainerBanner {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+}
+
+.ModelButton, .divEditContainer button, .divPostsContainerButtonCreate a, .divPostLinkA a, .divPostLinkADelete button, .pagination button, .divShowContainerButton a, .divCreateContainer button {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.ModelButton:hover, .divEditContainer button:hover, .divPostsContainerButtonCreate a:hover, .divPostLinkA a:hover, .divPostLinkADelete button:hover, .pagination button:hover, .divShowContainerButton a:hover, .divCreateContainer button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.Messages, .messagesCreate {
+  color: red;
+}
+
+.divEditContainerForm {
+  width: 100%;
+}
+.divEditContainerForm input {
+  border: none;
+}
+.divEditContainerForm input.title {
+  width: 100%;
+  font-size: 30px;
+  border-bottom: 2px solid gray;
+}
+.divEditContainerForm input.number {
+  width: 100%;
+  height: 30px;
+}
+.divEditContainerForm textarea {
+  border: none;
+}
+.divEditContainerForm textarea.description {
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 2px solid gray;
+  height: 200px;
+}
+.divEditContainer button {
+  background-color: blue;
+  color: white;
+  border: none;
+  margin: 20px 0px;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  background-color: black;
+}
+
+.divFooterContainer {
+  width: 1140px;
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.divFooterContainerIn {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.divFooterContainerIn h3 {
+  color: white;
+}
+.divFooterContainerIn li {
+  padding-top: 10px;
+}
+.divFooterContainerIn li a {
+  color: white;
+  text-decoration: none;
+}
+.divFooterContainerOut {
+  clear: left;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=App.css.map */

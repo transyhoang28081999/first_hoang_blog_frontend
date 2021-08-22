@@ -1,0 +1,43 @@
+@import '../scss/variable';
+@import '../scss/popular';
+
+.divCreateContainer{
+    @extend .ModelContainer;
+    &Banner{
+        @extend .ModelBanner;
+    }
+    &Form{
+        width: 100%;
+        input{
+            border: none;
+            &.title{
+                width: 100%;
+                font-size: 30px;
+                border-bottom: 2px solid gray;
+            }
+            &.number{
+                width: 100%;
+                height: 30px;
+            }
+        }
+        textarea{
+            border: none;
+            &.description{
+                width: 100%;
+                font-size: 18px;
+                border-bottom: 2px solid gray;
+                height: 200px;
+            }
+        }
+    }
+    button{
+        @extend .ModelButton;
+        background-color: $color-blue;
+        color: $color-white;
+        border: none;
+        margin: 20px 0px;
+    }
+}
+.messagesCreate{
+    @extend .Messages;
+}

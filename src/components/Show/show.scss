@@ -1,0 +1,19 @@
+@import '../scss/variable';
+@import '../scss/popular';
+
+.divShowContainer{
+    @extend .ModelContainer;
+    &Banner{
+        @extend .ModelBanner;
+    }
+    &Button{
+        margin-top: 50px;
+        padding-bottom: 50px;
+        a{
+            @extend .ModelButton;
+            color: $color-white;
+            background-color: $color-blue;
+            float: right;
+        }
+    }
+}

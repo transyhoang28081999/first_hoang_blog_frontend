@@ -1,0 +1,34 @@
+@import '../scss/variable';
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+$header-height: 80px;
+header{
+    width: 100%;
+    height: $header-height;
+    background-color: $color-black;
+}
+.divHeaderContainer{
+    width: $width-container;
+    margin: $margin-auto;
+    &Left{
+        line-height: $header-height;
+        color: $color-white;
+        width: 50%;
+        float: left;
+        h1{
+            font-size: 40px;
+        }
+    }
+    &Right{
+        float: right;
+        line-height: $header-height;
+        a{
+            color: $color-white;
+            text-decoration: none;
+            margin-right: 25px;
+        }
+    }
+}

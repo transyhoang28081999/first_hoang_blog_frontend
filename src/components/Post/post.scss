@@ -1,0 +1,44 @@
+@import './scss/variable';
+@import './scss/popular';
+.divPost{
+    margin-bottom: 100px;
+    clear: both;
+}
+.divPostImage{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+.divPostText{
+    width: 1000px;
+    height: 150px;
+    &Span{
+        color: gray;
+        font-weight: 500;
+        &In{
+            color: $color-black;
+            font-weight: bold;
+        }
+    }
+}
+.divPostLinkA a{
+    margin-right: 50px;
+    @extend .ModelButton;
+    float: left;
+}
+.divPostLinkARead a{
+    background-color: $color-blue;
+    color: $color-white;
+}
+.divPostLinkAEdit a{
+    background-color: yellow;
+    color: $color-blue;
+}
+.divPostLinkADelete button{
+    margin-right: 50px;
+    @extend .ModelButton;
+    float: left;
+    background-color: red;
+    color: $color-white;
+    border: none;
+}

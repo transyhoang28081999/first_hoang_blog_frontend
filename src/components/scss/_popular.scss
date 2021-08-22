@@ -1,0 +1,25 @@
+.ModelContainer{
+    width: $width-container;
+    margin: $margin-auto;
+}
+.ModelBanner{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        text-align: center;
+        padding-bottom: 40px;
+        border-bottom: 1px solid gray;
+}
+.ModelButton{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: $transition;
+    &:hover{
+        background-color: $color-black;
+        cursor: pointer;
+    }
+}
+.Messages{
+    color: red;
+}
